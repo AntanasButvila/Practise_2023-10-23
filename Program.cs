@@ -84,3 +84,25 @@
 //         return count;
 //     }
 // }
+
+
+// Задача 30: Напишите программу, которая
+// выводит массив из 8 элементов, заполненный
+// нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
+
+int[] result = GetBinaryArray(8); // Получили массив на 8 эл.
+Console.WriteLine($"[{String.Join("; ", result)}]");
+
+int[] GetBinaryArray(int size)
+{
+    // тип_данных [] имя_массива = new int[размер]
+    int[] array = new int[size];
+    // Изначально массив заполнен НУЛЯМИ
+    for (int i = 0; i < array.Length; i++) // array.Length = size
+    {
+        array[i] = new Random().Next(2); // [0, 2)
+        // Next(2) => Next(0, 2)
+    }
+    return array;
+}
