@@ -56,3 +56,31 @@
 //     }
 //     return sum;
 // }
+
+
+// Задача 26: Напишите программу, которая принимает
+// на вход число и выдаёт количество цифр в числе.
+// 456 -> 3
+// 78 -> 2
+// 89126 -> 5
+
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Количество цифр в числе {number} = {GetCountNumbers(number)}");
+// int GetCountNumbers(int num)
+// {
+//     if (num == 0)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         int count = 0; // Изначально 0 цифр в числе
+//         while (num > 0)
+//         {
+//             count++; // Инкремент: count = count + 1
+//             num /= 10; // num = num / 10
+//         }
+//         return count;
+//     }
+// }
